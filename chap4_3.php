@@ -6,5 +6,5 @@ $owners = [
     ["name" => "藤井", "animal" => ["猫", "チワワ", "うさぎ"]],
 ];
 foreach ($owners as $owner) {
-    displayMsg($owner["name"], $owner["animal"]);
+    displayMsg($owner);
 }

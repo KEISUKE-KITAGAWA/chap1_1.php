@@ -1,14 +1,14 @@
 <?php 
 
-function displayMsg($name, $animal){
-    $count = count($animal);
-    $animal_type = array_unique($animal);
+function displayMsg($owner) {
+    $count = count($owner["animal"]);
+    $animal_type = array_unique($owner["animal"]);
     $animal = implode("、", $animal_type);
 
-    $msg =<<< EOM
-    {$name}さんは   
-    {$animal}を
-    {$count}匹飼っています。\n
-    EOM;
+    $msg =<<<EOM
+{$owner["name"]}さんは   
+{$animal}を
+{$count}匹飼っています。\n
+EOM;
     echo $msg;
 }
