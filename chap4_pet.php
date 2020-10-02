@@ -5,7 +5,7 @@ function displayMsg($owner) {
     $animal_type = array_unique($owner["animal"]);
     $animal = implode("、", $animal_type);
 
-    $msg =<<<EOM
+    $msg = <<<EOM
 {$owner["name"]}さんは   
 {$animal}を
 {$count}匹飼っています。\n
